@@ -118,8 +118,9 @@
 }
 
 .About__title,
-.Products__title{
-    padding: 50px;
+.Products__title,
+.Find__title{
+    padding: 90px;
     font-size: 70px;
     text-align: center;
     
@@ -215,3 +216,40 @@ span{
     width: 100%;
     justify-content: space-around;
 }
+
+/*estilos Find Us*/
+
+.Find{
+    height: fit-content;
+    background-color: #720a14;
+}
+
+.direction{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.Find__info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+  
+   
+}
+
+.direction__info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+
