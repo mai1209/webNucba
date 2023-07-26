@@ -32,7 +32,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-   
+   z-index: 1;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.733);
 
 
@@ -149,6 +149,58 @@
     height: 300px;
 }
 
+@media (max-width: 500px){
+
+    .About{
+        background-color: #92252c ;
+        height: fit-content;
+    }
+
+    .About__benefits{
+      
+        flex-direction: column;
+        
+        
+    }
+
+    .About__title,
+.Products__title,
+.Find__title{
+    padding: 90px;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+
+.Home {
+    height: fit-content;
+   
+
+
+}
+
+.Home__slogan{
+    font-size: 60px;
+    text-align: center;
+}
+
+.Home__text{
+    text-align: center;
+}
+
+.Home__button{
+   
+    font-size: 15px;
+    padding: 15px;
+    
+}
+
+.nav__link{
+   flex-direction: column;
+}
+}
+
 /*estilos Products*/
 
 .Products{
@@ -222,6 +274,7 @@ span{
 .Find{
     height: fit-content;
     background-color: #720a14;
+    padding-bottom: 80px;
 }
 
 .direction{
@@ -232,9 +285,11 @@ span{
 .Find__info{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 50px;
     padding: 30px;
+    max-width: 1500px;
+    margin: auto;
   
    
 }
@@ -253,3 +308,52 @@ span{
 }
 
 
+
+.footer{
+    height: 250px;
+    background-color: #720a14;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__link{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+@media (max-width: 500px){
+    .Find__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 50px;
+        padding: 30px;
+        max-width: 1500px;
+        margin: auto;
+      
+       
+    }  
+
+    .map{
+        width: 300px;
+    }
+
+    .footer__link{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .footer{
+        height: fit-content;
+        background-color: #720a14;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
