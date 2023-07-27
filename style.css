@@ -8,7 +8,7 @@
     text-decoration: none;
     color: var(--color-text);
     scroll-behavior: smooth;
-    scroll-margin-top: 120px;
+    scroll-margin-top: 80px;
 
 
 
@@ -26,7 +26,7 @@
     background-color: var(--color-nav);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 30px;
     height: 120px;
     position: fixed;
@@ -40,8 +40,9 @@
 
 .nav__logo {
     width: 100px;
-    height: 120px;
-    transform: scaleX(-1);
+    height: 100px;
+    align-self: center;
+ 
 }
 
 .nav__link {
@@ -109,6 +110,11 @@
     box-shadow: 0 0 20px var(--color-hover);
 }
 
+.header__logo{
+    display: none;
+}
+
+
 
 /*estilos About Us*/
 
@@ -149,11 +155,16 @@
     height: 300px;
 }
 
+input{
+    display: none;
+}
+
 @media (max-width: 500px){
 
     .About{
         background-color: #92252c ;
         height: fit-content;
+        padding-bottom: 40px;
     }
 
     .About__benefits{
@@ -174,7 +185,7 @@
 
 
 .Home {
-    height: 100%;
+    height: 90vh;
    
 
 
@@ -198,7 +209,51 @@
 
 .nav__link{
    flex-direction: column;
+   align-items: flex-start;
+   position: fixed;
+   top: 120px;
+   left: 0;
+   background-color: #d9848cc7;
+   width: 100%;
+   padding: 20px;
+   display: none;
+   gap: 35px;
+   
+   
 }
+
+.nav__link  li {
+   border-bottom: 2px solid  rgba(114, 71, 104, 0.692); 
+   padding-bottom: 5px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+#nav:checked ~ .nav__link {
+    display: flex;
+  }
+
+
+.Products{
+   padding-bottom: 50px;
+   
+   
+}
+
+
+.header__logo{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+  
 }
 
 /*estilos Products*/
@@ -310,7 +365,7 @@ span{
 
 
 .footer{
-    height: 250px;
+    height: 150px;
     background-color: #720a14;
     display: flex;
     justify-content: space-between;
@@ -343,17 +398,50 @@ span{
 
     .footer__link{
         display: flex;
-        flex-direction: column;
+        justify-content: flex-end;
+       width: 100%;
         gap: 20px;
-        padding: 30px;
+        padding: 0;
+    }
+
+    .footer__link a img{
+        width: 30px;
+        height: 30px;
     }
 
     .footer{
         height: fit-content;
         background-color: #720a14;
         display: flex;
-        flex-direction: column;
+        padding: 10px;
         justify-content: space-between;
         align-items: center;
+        width:100%;
+        gap: 30px;
+    }
+
+    .nav__logo{
+        width: 78px;
+        height: 78px;
+    }
+
+    .card{
+       
+        gap: 10px;
+        width: 200px;
+        height: 350px;
+       
+    }
+
+    .Products__cards{
+        
+        gap: 10px;
+        padding: 0;
+    }
+
+    .card__img{
+        width: 180px;
+        height: 180px;
+       
     }
 }
