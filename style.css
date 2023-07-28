@@ -309,6 +309,7 @@ input{
 span{
     font-size: 25px;
     color: #d9848d;
+   padding-left: 5px;
 }
 
 .card__carro{
