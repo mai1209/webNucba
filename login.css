@@ -25,6 +25,7 @@ body{
     background-size: cover;
     background-color: #d9848cbd;
     background-blend-mode: multiply;
+    height: 100vh;
 }
 
 .Login {
@@ -101,4 +102,90 @@ span{
     font-weight: 800;
     cursor: pointer;
     color: var(--color-hover);
+}
+
+
+@media (max-width: 500px){
+    
+    .Login {
+   
+        height: fit-content;
+        padding: 5px;
+        width: 320px;
+        display: flex;
+     
+      
+    
+    
+    }
+    
+    .Login__info {
+        background-color: var(--color-nav);
+        padding: 10px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 320px;
+    
+    }
+
+  
+    
+    .Login__input {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        width: 90%;
+        font-size: 20px;
+    }
+    
+    input {
+        background: none;
+        border: none;
+        border-bottom: 1px solid var(--color-hover);
+        height: 40px;
+        text-align: center;
+        outline: none;
+    
+    
+    }
+    
+    ::placeholder {
+        color: var(--color-hover);
+        text-align: center;
+    
+    }
+    
+    
+    .Login__btn {
+    
+        border: none;
+        background-color: var(--color-hover);
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    .Login__title{
+        font-size: 50px;
+    }
+    
+    span{
+        font-size: 11px;
+        color: var(--color-hover);
+       
+    }
+    
+    .span  {
+        font-size: 20px;
+        font-weight: 800;
+        cursor: pointer;
+        color: var(--color-hover);
+    }
 }
