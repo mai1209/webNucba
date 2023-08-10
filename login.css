@@ -19,7 +19,7 @@ body {
   background-size: cover;
   background-color: #d9848cbd;
   background-blend-mode: multiply;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +28,7 @@ body {
 .Login {
   height: fit-content;
   max-width: 800px;
+  width: 500PX;
   margin: 0 10px;
 }
 

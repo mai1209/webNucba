@@ -1,448 +1,394 @@
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    color: var(--color-text);
-    scroll-behavior: smooth;
-    scroll-margin-top: 80px;
-
-
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-text);
+  scroll-behavior: smooth;
+  scroll-margin-top: 80px;
 }
 
 :root {
-    --color-nav: #d9848d;
-    --color-text: rgb(255, 255, 255);
-    --color-hover: rgb(114, 71, 104);
+  --color-nav: #d9848d;
+  --color-text: rgb(255, 255, 255);
+  --color-hover: rgb(114, 71, 104);
 }
 
 /*estilos nav*/
 
 .header__nav {
-    background-color: var(--color-nav);
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 30px;
-    height: 120px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-   z-index: 1;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.733);
-
-
+  background-color: var(--color-nav);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 30px;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.733);
 }
 
 .nav__logo {
-    width: 100px;
-    height: 100px;
-    align-self: center;
- 
+  width: 100px;
+  height: 100px;
+  align-self: center;
 }
 
 .nav__link {
-    display: flex;
-    gap: 20px;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .nav__link a:hover {
-    color: var(--color-hover);
+  color: var(--color-hover);
 }
 
 .Home {
-    height: 100vh;
-    width: 100%;
-    background-image: url(img/gym.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #d9848cbd;
-    background-blend-mode: multiply;
-    background-position: center;
-    margin-top: 120px;
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/gym.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #d9848cbd;
+  background-blend-mode: multiply;
+  background-position: center;
+  margin-top: 120px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    gap: 40px;
-
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
 }
 
 .Home__slogan {
-    background: linear-gradient(to right, rgb(252, 250, 250), #e91026, #720a14);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(238, 232, 232, 0.63);
-    font-size: 100px;
-    font-weight: 800;
- 
-
+  background: linear-gradient(to right, rgb(252, 250, 250), #e91026, #720a14);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(238, 232, 232, 0.63);
+  font-size: 100px;
+  font-weight: 800;
 }
 
-.Home__text{
-    font-size: 30px;
+.Home__text {
+  font-size: 30px;
 }
 
-.Home__button{
-    border: none;
-    background-color: var(--color-nav);
-    font-size: 20px;
-    padding: 20px;
-    border-radius: 50px;
-    cursor: pointer;
+.Home__button {
+  border: none;
+  background-color: var(--color-nav);
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
-.Home__button:hover{
-    color: var(--color-hover);
-    box-shadow: 0 0 20px var(--color-hover);
+.Home__button:hover {
+  color: var(--color-hover);
+  box-shadow: 0 0 20px var(--color-hover);
 }
 
-.header__logo{
-    display: none;
+.header__logo {
+  display: none;
 }
-
-
 
 /*estilos About Us*/
 
-.About{
-    background-color: #92252c ;
-    height: 100vh;
+.About {
+  background-color: #92252c;
+  height: 100vh;
 }
 
 .About__title,
 .Products__title,
-.Find__title{
-    padding: 90px;
-    font-size: 70px;
-    text-align: center;
-    
+.Find__title {
+  padding: 90px;
+  font-size: 70px;
+  text-align: center;
 }
 
-.About__benefits{
-    display: flex;
-    padding: 20px;
-    gap:  10px;
-   margin: auto;
-   max-width: 980;
-    
+.About__benefits {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  margin: auto;
+  max-width: 980;
 }
 
 .benefits__1,
 .benefits__2,
-.benefits__3{
-    display: flex;
+.benefits__3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #222c32be;
+  border-radius: 20px;
+  height: 300px;
+}
+
+input {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .About {
+    background-color: #92252c;
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+
+  .About__benefits {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background-color:  #222c32be ;
-    border-radius: 20px;
-    height: 300px;
-}
+  }
 
-input{
-    display: none;
-}
-
-@media (max-width: 500px){
-
-    .About{
-        background-color: #92252c ;
-        height: fit-content;
-        padding-bottom: 40px;
-    }
-
-    .About__benefits{
-      
-        flex-direction: column;
-        
-        
-    }
-
-    .About__title,
-.Products__title,
-.Find__title{
+  .About__title,
+  .Products__title,
+  .Find__title {
     padding: 90px;
     font-size: 50px;
     text-align: center;
-    
-}
+  }
 
-
-.Home {
+  .Home {
     height: 90vh;
-   
+  }
 
-
-}
-
-.Home__slogan{
+  .Home__slogan {
     font-size: 60px;
     text-align: center;
-}
+  }
 
-.Home__text{
+  .Home__text {
     text-align: center;
-}
+  }
 
-.Home__button{
-   
+  .Home__button {
     font-size: 15px;
     padding: 15px;
-    
-}
+  }
 
-.nav__link{
-   flex-direction: column;
-   align-items: flex-start;
-   position: fixed;
-   top: 120px;
-   left: 0;
-   background-color: #d9848cc7;
-   width: 100%;
-   padding: 20px;
-   display: none;
-   gap: 35px;
-   
-   
-}
+  .nav__link {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    background-color: #d9848cc7;
+    width: 100%;
+    padding: 20px;
+    display: none;
+    gap: 35px;
+  }
 
-.nav__link  li {
-   border-bottom: 2px solid  rgba(114, 71, 104, 0.692); 
-   padding-bottom: 5px;
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-}
+  .nav__link li {
+    border-bottom: 2px solid rgba(114, 71, 104, 0.692);
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-#nav:checked ~ .nav__link {
+  #nav:checked ~ .nav__link {
     display: flex;
   }
 
+  .Products {
+    padding-bottom: 50px;
+  }
 
-.Products{
-   padding-bottom: 50px;
-   
-   
-}
-
-
-.header__logo{
+  .header__logo {
     display: flex;
-}
-
-
-
-
-
-
-
-
-  
+  }
 }
 
 /*estilos Products*/
 
-.Products{
-    height: fit-content;
-    background-color: var(--color-nav);
-   
+.Products {
+  height: fit-content;
+  background-color: var(--color-nav);
 }
 
-.Products__cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    padding: 20px;
+.Products__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 250px;
-    height: fit-content;
-    padding: 10px;
-    background-color:#222c32be ;
-    border-radius: 20px;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 250px;
+  height: fit-content;
+  padding: 10px;
+  background-color: #222c32be;
+  border-radius: 20px;
 }
 
-.card__img{
-    width: 200px;
-    height: 190px;
-    border-radius: 10px;
-    cursor: pointer;
+.card__img {
+  width: 200px;
+  height: 190px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.card__img:hover{
-    width: 210px;
-    height: 200px;
+.card__img:hover {
+  width: 210px;
+  height: 200px;
 }
 
-.card__btn{
-    border: none;
-    background-color: var(--color-nav);
-    font-size: 15px;
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
+.card__btn {
+  border: none;
+  background-color: var(--color-nav);
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-span{
-    font-size: 25px;
-    color: #d9848d;
-   padding-left: 5px;
+span {
+  font-size: 25px;
+  color: #d9848d;
+  padding-left: 5px;
 }
 
-.card__carro{
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+.card__carro {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
-.shop{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-around;
+.shop {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
 }
 
 /*estilos Find Us*/
 
-.Find{
-    height: fit-content;
-    background-color: #720a14;
-    padding-bottom: 80px;
+.Find {
+  height: fit-content;
+  background-color: #720a14;
+  padding-bottom: 80px;
 }
 
-.direction{
-    text-align: center;
-    padding-bottom: 70px;
+.direction {
+  text-align: center;
+  padding-bottom: 70px;
 }
 
-.Find__info{
+.Find__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  padding: 30px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.direction__info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.footer {
+  height: 150px;
+  background-color: #720a14;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+@media (max-width: 500px) {
+  .Find__info {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     gap: 50px;
     padding: 30px;
     max-width: 1500px;
     margin: auto;
-  
-   
-}
+  }
 
-.direction__info{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+  .map {
+    width: 300px;
+  }
 
-.info{
+  .footer__link {
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
     gap: 20px;
-    font-size: 20px;
-}
+    padding: 0;
+  }
 
+  .footer__link a img {
+    width: 30px;
+    height: 30px;
+  }
 
-
-.footer{
-    height: 150px;
+  .footer {
+    height: fit-content;
     background-color: #720a14;
     display: flex;
+    padding: 10px;
     justify-content: space-between;
     align-items: center;
-}
+    width: 100%;
+    gap: 30px;
+  }
 
-.footer__link{
-    display: flex;
-    gap: 20px;
-    padding: 30px;
-}
+  .nav__logo {
+    width: 78px;
+    height: 78px;
+  }
 
-@media (max-width: 500px){
-    .Find__info{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        gap: 50px;
-        padding: 30px;
-        max-width: 1500px;
-        margin: auto;
-      
-       
-    }  
+  .card {
+    gap: 10px;
+    width: 200px;
+    height: 350px;
+  }
 
-    .map{
-        width: 300px;
-    }
+  .Products__cards {
+    gap: 10px;
+    padding: 0;
+  }
 
-    .footer__link{
-        display: flex;
-        justify-content: flex-end;
-       width: 100%;
-        gap: 20px;
-        padding: 0;
-    }
-
-    .footer__link a img{
-        width: 30px;
-        height: 30px;
-    }
-
-    .footer{
-        height: fit-content;
-        background-color: #720a14;
-        display: flex;
-        padding: 10px;
-        justify-content: space-between;
-        align-items: center;
-        width:100%;
-        gap: 30px;
-    }
-
-    .nav__logo{
-        width: 78px;
-        height: 78px;
-    }
-
-    .card{
-       
-        gap: 10px;
-        width: 200px;
-        height: 350px;
-       
-    }
-
-    .Products__cards{
-        
-        gap: 10px;
-        padding: 0;
-    }
-
-    .card__img{
-        width: 180px;
-        height: 180px;
-       
-    }
+  .card__img {
+    width: 180px;
+    height: 180px;
+  }
 }
