@@ -101,6 +101,27 @@
   display: none;
 }
 
+@media (max-width: 900px) {
+  .header__logo {
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .header__nav {
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav__logo {
+    width: 60px;
+    height: 60px;
+   
+  }
+  
+}
+
 /*estilos About Us*/
 
 .About {
@@ -142,15 +163,42 @@ input {
   display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .About {
     background-color: #92252c;
     height: fit-content;
-    padding-bottom: 40px;
+    padding: 20px;
+ 
   }
 
   .About__benefits {
     flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .benefits__1,
+  .benefits__2,
+  .benefits__3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #222c32be;
+    border-radius: 20px;
+    height: 300px;
+    width: 100%;
+ 
+   
+    text-align: center;
+  }
+  .About__text{
+    width: 200px;
+    font-size: 10px;
   }
 
   .About__title,
@@ -331,26 +379,34 @@ span {
   padding: 30px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .Find__info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
     gap: 50px;
-    padding: 30px;
+    padding: 0px;
     max-width: 1500px;
     margin: auto;
+  
   }
 
-  .map {
-    width: 300px;
+  .info{
+    
+    font-size: 15px;
   }
+
+  .info img{
+    height: 30px;
+    width: 30px;
+  }
+
+  
 
   .footer__link {
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    justify-content:flex-start;
     gap: 20px;
     padding: 0;
   }
@@ -365,16 +421,12 @@ span {
     background-color: #720a14;
     display: flex;
     padding: 10px;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
-    width: 100%;
-    gap: 30px;
+   
   }
 
-  .nav__logo {
-    width: 78px;
-    height: 78px;
-  }
+ 
 
   .card {
     gap: 10px;
